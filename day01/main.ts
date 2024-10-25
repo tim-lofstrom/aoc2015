@@ -5,12 +5,14 @@ const input = readInputLine(__dirname, "input.txt");
 const parts = split(input, "");
 
 function calcNextFloor(floor: number, direction: string | undefined) {
-  if (direction === "(") {
-    return floor + 1;
-  } else if (direction === ")") {
-    return floor - 1;
+  switch (direction) {
+    case "(":
+      return floor + 1;
+    case ")":
+      return floor - 1;
+    default:
+      return floor;
   }
-  return floor;
 }
 
 function basement(parts: string[] | undefined, floor: number): number {
