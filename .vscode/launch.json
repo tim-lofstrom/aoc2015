@@ -9,11 +9,11 @@
       "args": ["${file}"]
     },
     {
-      "name": ".NET Core Launch (console)",
+      "name": ".NET Core Launch",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/day01-fs/bin/Debug/net8.0/day01-fs.dll",
+      "program": "${workspaceFolder}/${relativeFileDirname}/bin/Debug/net8.0/${relativeFileDirname}.dll",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,

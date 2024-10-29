@@ -5,7 +5,7 @@
       "label": "build",
       "command": "dotnet",
       "type": "process",
-      "args": ["build", "${workspaceFolder}/day01-fs"],
+      "args": ["build", "${workspaceFolder}/${relativeFileDirname}"],
       "group": {
         "kind": "build",
         "isDefault": true
