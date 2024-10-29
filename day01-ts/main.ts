@@ -1,5 +1,5 @@
 import { first, reduce, split, tail } from "lodash";
-import { readInputLine } from "../utils/file-utils";
+import { readInputLine } from "./utils/file-utils";
 
 const input = readInputLine(__dirname, "input.txt");
 const parts = split(input, "");

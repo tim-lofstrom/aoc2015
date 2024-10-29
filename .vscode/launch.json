@@ -7,6 +7,17 @@
       "name": "Launch Program",
       "runtimeArgs": ["-r", "ts-node/register"],
       "args": ["${file}"]
+    },
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/day01-fs/bin/Debug/net8.0/day01-fs.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
     }
   ]
 }
