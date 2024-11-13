@@ -23,7 +23,15 @@ let rec basement (parts: char array) (floor: int) =
         1 + basement rest next
     | _ -> 0
 
-let part1 = parts |> Array.fold (fun floor direction -> calcNext floor direction) 0
+
+let tuple = (1, 2)
+let arr = [| 1; 2 |]
+let list = [ 1; 2 ]
+
+let d = Array.tryHead [||] |> Option.defaultValue 0
+
+
+let part1 = parts |> Array.fold calcNext 0
 let part2 = basement parts 0
 
 printfn "Part 1: %i" part1
