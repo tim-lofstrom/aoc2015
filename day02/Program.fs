@@ -5,8 +5,8 @@ let readFileAsArray (path: string) =
     let filePath = Path.Combine(basePath, path)
     File.ReadAllLines(filePath)
 
-let input = readFileAsArray "day02-fs/input.txt"
-let example = readFileAsArray "day02-fs/example.txt"
+let input = readFileAsArray "input.txt"
+let example = readFileAsArray "example.txt"
 
 let area length width height =
     [| (length * width); (width * height); (height * length) |]

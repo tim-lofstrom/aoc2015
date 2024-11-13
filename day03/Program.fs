@@ -5,8 +5,8 @@ let readFileAsString (path: string) =
     let filePath = Path.Combine(basePath, path)
     File.ReadAllText(filePath)
 
-let parts = readFileAsString "day03-fs/input.txt" |> Seq.toArray
-let example = readFileAsString "day03-fs/example.txt" |> Seq.toArray
+let parts = readFileAsString "input.txt" |> Seq.toArray
+let example = readFileAsString "example.txt" |> Seq.toArray
 
 let nextCoordinate (coordinate: (int * int)) (dir: char) =
     match coordinate, dir with

@@ -5,7 +5,7 @@ let readFileAsString (path: string) =
     let filePath = Path.Combine(basePath, path)
     File.ReadAllText(filePath)
 
-let (parts: char array) = readFileAsString "day01/input.txt" |> Seq.toArray
+let (parts: char array) = readFileAsString "input.txt" |> Seq.toArray
 
 let calcNext (floor: int) (direction: char) =
     match direction with
